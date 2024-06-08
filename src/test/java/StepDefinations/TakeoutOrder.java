@@ -15,7 +15,7 @@ public class TakeoutOrder extends TestBase  {
     @Before
     public void setUp() {
         driver = initialize();
-        driver.get("https://aldos.orderapp.online");
+        driver.get("https://qasim.orderapp.online");
         lp = new LandingPage(driver);
     }
     @After

@@ -7,7 +7,6 @@ When User selected takeout order type
 Then User should be landed on the index page
 
 
-@ASAPorder
 Scenario: User should be able to place A asap takeout order.
 
 And Selects Order Time as ASAP
@@ -19,7 +18,7 @@ And Enters the payement details
 Then The Order should be placed successfully
 
 
-@FutureOrder
+
 Scenario: User should be able to place A Future takeout order.
 
 And Selects Order Time
