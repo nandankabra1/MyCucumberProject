@@ -1,0 +1,7 @@
+pages/CheckoutPage.class
+pages/ConfirmationPage.class
+testbase/TestBase.class
+pages/IndexPage.class
+StepDefinations/TestRunner.class
+pages/LandingPage.class
+StepDefinations/TakeoutOrder.class
