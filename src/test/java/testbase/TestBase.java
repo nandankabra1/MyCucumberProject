@@ -1,26 +1,30 @@
 package testbase;
 
 import org.openqa.selenium.WebDriver;
+import configurations.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class TestBase {
-	
-	
 
-    public WebDriver initialize() {
-        
+	public ConfigReader configfile = new ConfigReader();
+	public static WebDriver driver;
 
-    	return new ChromeDriver();
-        
-        
-    }
-    
-    
-    
+	public WebDriver initialize() {
 
-    public void tearDown(WebDriver driver) {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+		if (configfile.getbrowser().equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		}
+		if (configfile.getbrowser().equalsIgnoreCase("safari")) {
+			driver = new SafariDriver();
+		}
+		if (configfile.getbrowser().equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		}
+
+		return driver;
+
+	}
+
 }

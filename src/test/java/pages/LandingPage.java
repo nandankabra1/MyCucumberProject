@@ -9,11 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import junit.framework.Assert;
+import testbase.TestBase;
 
-public class LandingPage{
+public class LandingPage extends TestBase{
 	
-	private WebDriver driver;
-	
+    private WebDriver driver;
 
 
     @FindBy(xpath = "//*[@id=\"termsfeed-com---nb\"]/div/div[3]/button[1]")
